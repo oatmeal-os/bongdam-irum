@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import FloatingBanner from "@/components/FloatingBanner";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://irummed.kr"),
@@ -23,8 +24,9 @@ export default function RootLayout({
     <html lang="ko">
       <body className="min-h-screen flex flex-col">
         <Header />
-        <main className="flex-1">{children}</main>
+        <main className="flex-1 pb-16 md:pb-0">{children}</main>
         <Footer />
+        <FloatingBanner />
       </body>
     </html>
   );

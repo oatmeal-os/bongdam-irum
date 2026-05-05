@@ -32,30 +32,14 @@ export default function Header() {
       <div className="bg-white py-2 px-4">
         <div className="max-w-6xl mx-auto flex justify-between items-center">
           {/* 로고 */}
-          <div className="flex items-center gap-3">
-            <Link href="/">
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
-                src="/logo.png"
-                alt="봉담이룸내과의원"
-                className="h-20 w-auto object-contain"
-              />
-            </Link>
+          <Link href="/">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
-              src="/about/dia.png"
-              alt="투석전문의가 진료합니다"
+              src="/logo.png"
+              alt="봉담이룸내과의원"
               className="h-20 w-auto object-contain"
             />
-            <a href="https://blog.naver.com/irummed" target="_blank" rel="noopener noreferrer">
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
-                src="/naverblog.png"
-                alt="네이버 블로그"
-                className="h-20 w-auto object-contain"
-              />
-            </a>
-          </div>
+          </Link>
 
           {/* 데스크탑 네비게이션 */}
           <nav className="hidden md:flex items-center gap-1">
