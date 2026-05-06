@@ -63,6 +63,17 @@ export default function FloatingBanner() {
           <span className="text-xs font-medium">전화걸기</span>
         </a>
 
+        {/* 네이버 블로그 */}
+        <a
+          href="https://blog.naver.com/irummed"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex-1 flex flex-col items-center justify-center py-2 gap-0.5"
+        >
+          <Image src="/naverblog.png" alt="네이버 블로그" width={26} height={26} className="object-contain" />
+          <span className="text-xs text-gray-600 font-medium">블로그</span>
+        </a>
+
         {/* 네이버 지도 */}
         <a
           href="https://naver.me/Gq8leH6K"

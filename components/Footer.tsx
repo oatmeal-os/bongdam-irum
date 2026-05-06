@@ -20,11 +20,11 @@ export default function Footer() {
             <li className="font-medium text-blue-200 text-xs mt-1">외래진료</li>
             <li className="flex items-center gap-2">
               <Clock size={14} className="text-blue-400 shrink-0" />
-              월·화·수·금 09:15 ~ 18:00
+              월·수·금 09:30 ~ 18:00
             </li>
             <li className="flex items-center gap-2">
               <Clock size={14} className="text-blue-400 shrink-0" />
-              목·토 09:15 ~ 13:00
+              화·목·토 09:30 ~ 13:00
             </li>
             <li className="font-medium text-blue-200 text-xs mt-2">인공신장실</li>
             <li className="flex items-center gap-2">

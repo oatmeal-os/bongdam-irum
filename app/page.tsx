@@ -59,7 +59,7 @@ export default function Home() {
         <div className="absolute inset-0 bg-black/50" />
         <div className="relative max-w-6xl mx-auto text-center">
           <p className="text-blue-200 text-sm font-medium mb-3 tracking-widest uppercase">
-            Bongdam Irum Medicine Center
+            Bongdam Irum Medical Center
           </p>
           <h1 className="text-3xl md:text-5xl font-bold mb-4 leading-tight drop-shadow">
             봉담이룸내과의원
@@ -68,12 +68,12 @@ export default function Home() {
             부설 인공신장실
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link
-              href="/departments"
+            <a
+              href="#directions"
               className="bg-white text-[#1565C0] font-bold px-8 py-3 rounded-full hover:bg-blue-50 transition-colors"
             >
-              진료과목 안내
-            </Link>
+              오시는 길 안내
+            </a>
             <Link
               href="/notice"
               className="border-2 border-white text-white font-bold px-8 py-3 rounded-full hover:bg-white/10 transition-colors"
@@ -236,7 +236,7 @@ export default function Home() {
       </section>
 
       {/* 오시는 길 배너 */}
-      <section className="bg-gray-800 text-white py-10 text-center">
+      <section id="directions" className="bg-gray-800 text-white py-10 text-center">
         <div className="max-w-6xl mx-auto px-4 mb-6">
           <h2 className="text-xl font-bold mb-2">오시는 길</h2>
           <div className="flex items-center justify-center gap-3 flex-wrap">
@@ -254,6 +254,34 @@ export default function Home() {
         </div>
         <div className="w-full max-w-5xl mx-auto px-4">
           <KakaoMap />
+        </div>
+
+        {/* 교통 안내 */}
+        <div className="max-w-5xl mx-auto px-4 mt-8 grid grid-cols-1 md:grid-cols-2 gap-6 text-left">
+          {/* 자차 이용 */}
+          <div className="bg-white/10 rounded-xl p-6">
+            <div className="inline-block bg-[#1565C0] text-white text-sm font-bold px-4 py-1.5 rounded-full mb-4">
+              자차 이용
+            </div>
+            <ul className="space-y-2 text-gray-200 text-sm leading-relaxed">
+              <li>· 봉담IC 혹은 천천IC에서 2km</li>
+              <li>· 건물 뒷편에 주차장 입구가 있습니다.</li>
+              <li>· 지하 1~2층 주차장 및 건물 뒷편 병원전용 공터 주차장 이용 가능</li>
+            </ul>
+          </div>
+
+          {/* 대중교통 */}
+          <div className="bg-white/10 rounded-xl p-6">
+            <div className="inline-block bg-[#1565C0] text-white text-sm font-bold px-4 py-1.5 rounded-full mb-4">
+              대중교통
+            </div>
+            <ul className="space-y-2 text-gray-200 text-sm leading-relaxed">
+              <li>· 버스정류장: 이편한세상 신봉담</li>
+              <li>· 마을버스 31, 31-1번 / 일반버스 42번 / 광역버스 1006번</li>
+              <li className="text-gray-400 text-xs pl-2">- 마을버스 31, 31-1번: 고색역, 수원역 경유</li>
+              <li className="text-gray-400 text-xs pl-2">- 일반버스 42번: 오목천역, 고색역, 수원역 경유</li>
+            </ul>
+          </div>
         </div>
       </section>
     </div>
