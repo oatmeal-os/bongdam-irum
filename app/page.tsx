@@ -64,8 +64,12 @@ export default function Home() {
           <h1 className="text-3xl md:text-5xl font-bold mb-4 leading-tight drop-shadow">
             봉담이룸내과의원
           </h1>
-          <p className="text-blue-100 text-lg md:text-xl mb-8 drop-shadow">
-            부설 인공신장실
+          <p className="text-blue-100 text-lg md:text-xl mb-6 drop-shadow">
+            부설 인공신장실 | 신장내과 · 일반내과 진료
+          </p>
+          <p className="text-white/90 text-base md:text-lg mb-8 drop-shadow leading-relaxed">
+            200평 규모, 50베드를 갖춘 인공신장실에서<br />
+            대학병원 출신 투석전문의가 직접 진료합니다.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
